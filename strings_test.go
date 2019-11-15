@@ -11,7 +11,7 @@ func TestFuzzyStrings(t *testing.T) {
 		{"Secret of N.I.M.H.", "secretofnimh"},
 		{"Amélie", "amelie"},
 		{"8½ (1963)", "8x1891963"},
-		{"banana", "bernana"},
+		{"banana", "banana"},
 	}
 	for _, table := range tables {
 		actual := ToFuzzyString(table.input)
